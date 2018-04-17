@@ -37,9 +37,9 @@ public class RunApplication extends Application {
         //Class der bestemmer hvilken type man vil tegne med.
         StylusType stylusType = new StylusType(1,Color.RED,10);
         //SelectionWindow
-        /*SelectionWindow selectionWindow = new SelectionWindow();
+        SelectionWindow selectionWindow = new SelectionWindow();
         selectionWindow.runSelectionWindow();
-*/
+
         Canvas canvas = new Canvas(600,600);
         root.getChildren().add(canvas);
 
