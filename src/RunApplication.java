@@ -1,6 +1,8 @@
 import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -15,7 +17,7 @@ public class RunApplication extends Application {
         Pane root = new Pane();
 
         Scene scene = new Scene(root, 600,600);
-        primaryStage.setTitle("Hello");
+        primaryStage.setTitle("Draw");
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -23,6 +25,10 @@ public class RunApplication extends Application {
         FollowMouse followMouse = new FollowMouse();
         //Class der bestemmer hvilken type man vil tegne med.
         StylusType stylusType = new StylusType(1,Color.RED,10);
+        //SelectionWindow
+        SelectionWindow selectionWindow = new SelectionWindow();
+        selectionWindow.runSelectionWindow();
+
 
 
 
