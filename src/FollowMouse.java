@@ -12,6 +12,8 @@ public class FollowMouse {
         transition.setToY(y);
         transition.setNode(node);
         transition.play();
+
+
     }
 
 }

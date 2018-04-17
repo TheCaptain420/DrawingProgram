@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class RunApplication extends Application {
+    //scene.snapshot();//Ændrer baggrunden?
 
 
     @Override
@@ -17,6 +18,9 @@ public class RunApplication extends Application {
         Pane root = new Pane();
 
         Scene scene = new Scene(root, 600,600);
+        primaryStage.setX(300);
+        primaryStage.setY(0);
+
         primaryStage.setTitle("Draw");
         primaryStage.setScene(scene);
         primaryStage.show();
