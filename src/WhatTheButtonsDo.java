@@ -15,4 +15,14 @@ public class WhatTheButtonsDo {
         });
 
     }
+
+    void changeSize(Button btn){
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+            }
+        });
+
+    }
 }

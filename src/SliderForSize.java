@@ -13,14 +13,14 @@ public class SliderForSize {
     void slider(){
         //Size
         slider.setMin(0);
-        slider.setMax(100);
-        slider.setValue(50);
+        slider.setMax(10);
+        slider.setValue(5);
         slider.getValue();
         slider.setShowTickLabels(true);
         slider.setShowTickMarks(true);
-        slider.setMajorTickUnit(50);
-        slider.setMinorTickCount(5);
-        slider.setBlockIncrement(10);
+        slider.setMajorTickUnit(5);
+        slider.setMinorTickCount(1);
+        slider.setBlockIncrement(2);
         slider.getValue();
 
     }

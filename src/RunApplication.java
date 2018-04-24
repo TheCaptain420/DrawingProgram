@@ -50,11 +50,10 @@ public class RunApplication extends Application {
 
 
 
-
         scene.setOnMouseDragged(event -> {
             gc.setFill(Color.RED);
             gc.setStroke(Color.BLACK);
-            gc.setLineWidth(5);
+            gc.setLineWidth(selectionWindow.getSliderSize());
             //gc.strokeOval(event.getSceneX(),event.getSceneY(),1,1);
             gc.strokeLine(event.getSceneX(),event.getSceneY(),event.getSceneX(),event.getSceneY());
         });
