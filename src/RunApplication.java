@@ -1,9 +1,12 @@
 import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.SnapshotParameters;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -51,11 +54,8 @@ public class RunApplication extends Application {
 
 
         scene.setOnMouseDragged(event -> {
-            gc.setFill(Color.RED);
-            gc.setStroke(Color.BLACK);
-            gc.setLineWidth(selectionWindow.getSliderSize());
-            //gc.strokeOval(event.getSceneX(),event.getSceneY(),1,1);
-            gc.strokeLine(event.getSceneX(),event.getSceneY(),event.getSceneX(),event.getSceneY());
+            stylusType.changeColor(selectionWindow.getColorSelectionboxType());
+            stylusType.getTheNode(event.getSceneX(),event.getSceneY(),gc,selectionWindow.getStylusSelectionboxType(),selectionWindow);
         });
 
         //Her tilføjer man den røde dot
